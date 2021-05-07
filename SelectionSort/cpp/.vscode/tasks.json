@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "msvc build",
+			"type": "shell",
+			"command": ".\\.vscode\\build.bat ${fileBasenameNoExtension}",
+			"group":  {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal":"always"
+			},
+			"problemMatcher": "$msCompile"
+		}
+	]
+}
